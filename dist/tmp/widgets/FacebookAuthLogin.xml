@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.facebookauthlogin.FacebookAuthLogin" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Facebook Auth Login</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="facebookauthButtonText" type="string" required="true">
+                <caption>Button Text</caption>
+                <description>Text the button will show</description>
+            </property>
+            <property key="facebookauthAppId" type="string" required="true">
+                <caption>App ID</caption>
+                <description>App ID from Facebook</description>
+            </property>
+            <property key="facebookauthCallback" type="action" required="true">
+                <caption>Callback</caption>
+                <description>Action to call after auth</description>
+            </property>
+            <property key='facebookauthResponse' type='attribute' required="true">
+                <caption>Response String</caption>
+                <description>Response string</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
